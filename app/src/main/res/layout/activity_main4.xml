@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.root.bluetooth.Main4Activity"
+    android:background="@color/colorPrimaryDark"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight="0.23"
+        android:background="@drawable/letplay"
+        android:layout_height="120dp">
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:textSize="1sp"
+        android:fontFamily="sans-serif"
+        android:background="@android:color/white" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="177dp"
+        android:layout_weight="0.66"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="252dp"
+            app:srcCompat="@drawable/icontom"
+            android:id="@+id/btntom1"
+            android:background="@android:color/transparent" />
+
+        <ImageButton
+            android:layout_width="152dp"
+            android:layout_height="233dp"
+            app:srcCompat="@drawable/iconsnare"
+            android:id="@+id/btnSnare"
+            android:background="@android:color/transparent"
+            android:layout_weight="0.88" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="259dp"
+            app:srcCompat="@drawable/icontom2"
+            android:id="@+id/btntom2"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        android:background="@android:color/transparent"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="197dp"
+            app:srcCompat="@drawable/iconkick"
+            android:id="@+id/btnKick1"
+            android:background="@android:color/transparent"
+            android:layout_weight="0.69" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="199dp"
+            app:srcCompat="@drawable/iconkick"
+            android:id="@+id/btnKick2"
+            android:background="@android:color/transparent"
+            android:layout_weight="0.27" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView12"
+        android:background="@android:color/white"
+        android:textSize="1sp" />
+</LinearLayout>
