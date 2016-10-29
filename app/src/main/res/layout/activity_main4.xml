@@ -9,86 +9,133 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context="com.example.root.bluetooth.Main4Activity"
-    android:background="@color/colorPrimaryDark"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:baselineAligned="false"
+    android:background="@drawable/drumv2">
 
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_weight="0.23"
-        android:background="@drawable/letplay"
-        android:layout_height="120dp">
-
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView9"
-        android:textSize="1sp"
-        android:fontFamily="sans-serif"
-        android:background="@android:color/white" />
+        android:orientation="vertical"
+        android:layout_width="34dp"
+        android:layout_height="match_parent"></LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="177dp"
-        android:layout_weight="0.66"
+        android:orientation="vertical"
+        android:layout_width="129dp"
+        android:layout_height="match_parent"
         android:weightSum="1">
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="252dp"
-            app:srcCompat="@drawable/icontom"
-            android:id="@+id/btntom1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:color/transparent"
+            android:id="@+id/btncrash"
+            android:layout_weight="0.51"
             android:background="@android:color/transparent" />
 
         <ImageButton
-            android:layout_width="152dp"
-            android:layout_height="233dp"
-            app:srcCompat="@drawable/iconsnare"
-            android:id="@+id/btnSnare"
-            android:background="@android:color/transparent"
-            android:layout_weight="0.88" />
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:color/transparent"
+            android:layout_weight="0.28"
+            android:id="@+id/btnhh"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="95dp"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"></LinearLayout>
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="259dp"
-            app:srcCompat="@drawable/icontom2"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:color/transparent"
+            android:id="@+id/btntom"
+            android:layout_weight="0.51"
+            android:background="@android:color/transparent" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:color/transparent"
+            android:id="@+id/btnkick"
+            android:layout_weight="0.41"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="82dp"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"></LinearLayout>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:color/transparent"
+            android:id="@+id/btnsnare"
+            android:layout_weight="0.80"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="90dp"
+        android:layout_height="298dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"></LinearLayout>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:color/transparent"
             android:id="@+id/btntom2"
+            android:layout_weight="0.40"
+            android:background="@android:color/transparent" />
+
+        <ImageButton
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:color/transparent"
+            android:id="@+id/btnfloor"
+            android:layout_weight="0.44"
             android:background="@android:color/transparent" />
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="176dp"
-        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:layout_width="115dp"
+        android:layout_height="match_parent"
         android:weightSum="1">
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="197dp"
-            app:srcCompat="@drawable/iconkick"
-            android:id="@+id/btnKick1"
-            android:background="@android:color/transparent"
-            android:layout_weight="0.69" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"></LinearLayout>
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="199dp"
-            app:srcCompat="@drawable/iconkick"
-            android:id="@+id/btnKick2"
-            android:background="@android:color/transparent"
-            android:layout_weight="0.27" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:color/transparent"
+            android:id="@+id/btnride"
+            android:layout_weight="0.44"
+            android:background="@android:color/transparent" />
     </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView12"
-        android:background="@android:color/white"
-        android:textSize="1sp" />
 </LinearLayout>

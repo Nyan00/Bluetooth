@@ -11,11 +11,14 @@ import com.example.root.bluetooth.com.example.root.model.soundManager;
 
 public class Main4Activity extends AppCompatActivity {
     private soundManager SoundManager;
-    ImageButton btnKick;
-    ImageButton btnKick2;
+    ImageButton btnkick;
+    ImageButton btnfloor;
     ImageButton btnTom;
     ImageButton btnTom2;
     ImageButton btnSnare;
+    ImageButton btnRide;
+    ImageButton btnCrash;
+    ImageButton btnhh;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,19 +27,19 @@ public class Main4Activity extends AppCompatActivity {
         addEvents();
     }
 
+
     private void addEvents() {
         final Context context = this;
-        btnKick.setOnClickListener(new View.OnClickListener() {
+        btnkick.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 clickBassDrum(v);
             }
         });
-
-        btnKick2.setOnClickListener(new View.OnClickListener() {
+        btnfloor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                clickBass2rum(v);
+               clickFloorDrum(v);
             }
         });
         btnTom.setOnClickListener(new View.OnClickListener() {
@@ -57,9 +60,26 @@ public class Main4Activity extends AppCompatActivity {
                 clickSnareDrum(v);
             }
         });
+        btnRide.setOnClickListener(new View.OnClickListener() {
+                                       @Override
+                                       public void onClick(View v) {clickRideDrum(v);
+                                       }
+                                   });
+        btnCrash.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                clickCrashDrum(v);
+            }
+        });
+        btnhh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                clickHhDrum(v);
+            }
+        });
     }
 
-    private void clickBass2rum(View v) {
+    private void clickFloorDrum(View v) {
         SoundManager.playSound(3);
     }
 
@@ -75,12 +95,31 @@ public class Main4Activity extends AppCompatActivity {
         SoundManager.playSound(7);
     }
 
+    private void clickRideDrum(View v) {
+        SoundManager.playSound(5);
+    }
+
+    private void clickCrashDrum(View v) { SoundManager.playSound(2);}
+
+    private void clickHhDrum(View v) {
+        SoundManager.playSound(4);
+    }
+
+    public void clickBassDrum(View view) {
+        SoundManager.playSound(1);
+    }
+
+
+
     private void addControls() {
-        btnKick= (ImageButton) findViewById(R.id.btnKick1);
-        btnKick2= (ImageButton) findViewById(R.id.btnKick2);
-        btnTom= (ImageButton) findViewById(R.id.btntom1);
+        btnkick= (ImageButton) findViewById(R.id.btnkick);
+        btnfloor= (ImageButton) findViewById(R.id.btnfloor);
+        btnTom= (ImageButton) findViewById(R.id.btntom);
         btnTom2= (ImageButton) findViewById(R.id.btntom2);
-        btnSnare= (ImageButton) findViewById(R.id.btnSnare);
+        btnSnare= (ImageButton) findViewById(R.id.btnsnare);
+        btnCrash= (ImageButton) findViewById(R.id.btncrash);
+        btnRide= (ImageButton) findViewById(R.id.btnride);
+        btnhh= (ImageButton) findViewById(R.id.btnhh);
 
         SoundManager=new soundManager();
         SoundManager.initSounds(getBaseContext());
@@ -92,9 +131,6 @@ public class Main4Activity extends AppCompatActivity {
         SoundManager.addSound(6,R.raw.snaredrumunmuffled);
         SoundManager.addSound(7,R.raw.tom8inch);
         SoundManager.addSound(8,R.raw.tom12inch);
-    }
-    public void clickBassDrum(View view) {
-        SoundManager.playSound(1);
     }
 
 }
